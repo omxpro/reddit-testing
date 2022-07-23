@@ -1,0 +1,30 @@
+[settings]
+allow_nsfw = false
+theme = "dark"
+times_to_run = 4
+opacity = 0.9
+storymode = true
+
+[settings.background]
+background_choice = "minecraft"
+
+[settings.tts]
+choice = "streamlabspolly"
+aws_polly_voice = "Matthew"
+streamlabs_polly_voice = "Matthew"
+tiktok_voice = "en_us_006"
+
+[reddit.creds]
+client_id = "$CLIENT_ID"
+client_secret = "$CLIENT_SECRET"
+username = "Comfortable-Kiwi6563"
+password = "$PASSWORD"
+2fa = false
+
+[reddit.thread]
+random = true
+subreddit = "funny"
+post_id = ""
+max_comment_length = 500
+post_lang = "en"
+min_comments = 15
