@@ -7,6 +7,8 @@ RUN mkdir /app
 ADD . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
+RUN python3 main.py
+RUN git status
 
 # tricks for pytube : https://github.com/elebumm/RedditVideoMakerBot/issues/142 
 # (NOTE : This is no longer useful since pytube was removed from the dependencies)
