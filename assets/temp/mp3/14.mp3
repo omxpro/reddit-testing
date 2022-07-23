@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>oops</title>
+<style>.cf-error-details{display:none}</style>
+
+
+</head>
+<body>
+<article style="display:none;"><div class="cf-error-details cf-error-524">
+  <h1>A timeout occurred</h1>
+  <p>The origin web server timed out responding to this request.</p>
+  <ul>
+    <li>Ray ID: 72f4aec94a6b6ef8</li>
+    <li>Your IP address: 2405:201:202e:308d:453e:de81:8f82:6dec</li>
+    <li>Error reference number: 524</li>
+    <li>Cloudflare Location: Mumbai</li>
+  </ul>
+</div>
+</article>
+</body>
+</html>
