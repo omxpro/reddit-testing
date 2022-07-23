@@ -15,10 +15,10 @@ streamlabs_polly_voice = "Matthew"
 tiktok_voice = "en_us_006"
 
 [reddit.creds]
-client_id = "$CLIENT_ID"
-client_secret = "$CLIENT_SECRET"
+client_id = "GUR4csdXdbqCb9OY91OQfQ"
+client_secret = "M-xtm_o5DBj98F6Tqu4PRqdzxMekFg"
 username = "Comfortable-Kiwi6563"
-password = "$PASSWORD"
+password = "1166omse"
 2fa = false
 
 [reddit.thread]
