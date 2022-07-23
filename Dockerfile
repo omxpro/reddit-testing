@@ -7,8 +7,14 @@ RUN mkdir /app
 ADD . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
+RUN python3 -m playwright install
+RUN python3 -m playwright install-deps
 RUN python3 main.py
 RUN git status
+RUN git config --global user.name "omxpro" && git config --global user.email "omsenjalia@gmail.com"
+RUN git add .
+RUN git commit -m "New Videos"
+RUN git push 
 
 # tricks for pytube : https://github.com/elebumm/RedditVideoMakerBot/issues/142 
 # (NOTE : This is no longer useful since pytube was removed from the dependencies)
