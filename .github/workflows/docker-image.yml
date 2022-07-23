@@ -16,3 +16,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: git stuff
+      run: |
+        git status
+        git config --global user.name "omxpro"
+        git config --global user.email "omsenjalia@gmail.com"
