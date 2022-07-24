@@ -47,7 +47,7 @@ jobs:
         run: |
           sudo apt install git-lfs
           git lfs install
-          git lfs track "GUI/*" "TTS/*" "results/*" "results/funny/*" "video_creation/*" "video_creation/data/*"
+          git lfs track "GUI/*" "TTS/*" "results/*" "results/funny/*"
           git lfs track
 
 
