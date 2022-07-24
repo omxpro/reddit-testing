@@ -37,8 +37,8 @@ jobs:
 
       - name: git stuff
         run: |
-          git config --global user.name "omxpro"
-          git config --global user.email "omsenjalia@gmail.com"
+          git config --global user.name "github-actions"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: run the program 
         run: python3 main.py
