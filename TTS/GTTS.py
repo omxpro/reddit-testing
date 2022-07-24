@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0480103d1fc0a102c0322c80ac4c6432c9d4c0d653974605aedab74df4ea0a6e
-size 476
+#!/usr/bin/env python3
+import random
+from utils import settings
+from gtts import gTTS
+
+max_chars = 0
+
+
+class GTTS:
+    def __init__(self):
+        self.max_chars = 0
+        self.voices = []
+
+    def run(self, text, filepath):
+        tts = gTTS(
+            text=text,
+            lang=settings.config["reddit"]["thread"]["post_lang"] or "en",
+            slow=False,
+        )
+        tts.save(filepath)
+
+    def randomvoice(self):
+        return random.choice(self.voices)
