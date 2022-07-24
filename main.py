@@ -76,20 +76,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print_markdown("## Clearing temp files")
         cleanup()
-res = command.run(['git config --global user.name "omxpro"'])
-res1 = command.run(['git config --global user.email "omsenjalia@gmail.com"'])
-res2 = command.run(['git add .'])
-res3 = command.run(['git commit -m "internal commit"']) 
-res4 = command.run(['git push'])
-
-print(res.output) 
-print(res1.output) 
-print(res2.output) 
-print(res3.output) 
-print(res4.output)
- 
-print(res.exit)
-print(res1.exit)
-print(res2.exit)
-print(res3.exit)
-print(res4.exit)
+        exit()
