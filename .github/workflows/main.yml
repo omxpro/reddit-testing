@@ -40,9 +40,4 @@ jobs:
           git config --global user.name "omxpro"
           git config --global user.email "omsenjalia@gmail.com"
       - name: run the program 
-        run: |
-          python3 main.py
-          git add .
-          git commit -m "internal things"
-          git push
-          
+        run: python3 main.py
