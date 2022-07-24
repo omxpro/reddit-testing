@@ -46,5 +46,8 @@ jobs:
       - name: push changes 
         run: |
           git add .
+          git config http.postBuffer 524288000
           git commit -m "New Videos"
-          git push
+          git config --global http.version HTTP/1.1 
+          git push 
+          git config --global http.version HTTP/2
