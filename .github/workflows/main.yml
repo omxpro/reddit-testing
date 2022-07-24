@@ -43,6 +43,15 @@ jobs:
       - name: run the program 
         run: python3 main.py
 
+      - name: git lfs
+        run: |
+          sudo apt install git-lfs
+          git lfs install
+          git reset —-soft HEAD~1
+          git lfs track "GUI/*" "TTS/*" "results/*" "results/funny/*" "utils/*" "video_creation/*" "video_creation/data/*"
+          git lfs track
+
+
       - name: push changes 
         run: |
           git add .
