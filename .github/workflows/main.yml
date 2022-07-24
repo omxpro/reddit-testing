@@ -39,5 +39,12 @@ jobs:
         run: |
           git config --global user.name "omxpro"
           git config --global user.email "omsenjalia@gmail.com"
+
       - name: run the program 
         run: python3 main.py
+
+      - name: push changes 
+        run: |
+          git add .
+          git commit -m "New Videos"
+          git push
