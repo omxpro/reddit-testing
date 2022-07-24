@@ -1,0 +1,7 @@
+GUI/* filter=lfs diff=lfs merge=lfs -text
+TTS/* filter=lfs diff=lfs merge=lfs -text
+results/* filter=lfs diff=lfs merge=lfs -text
+results/funny/* filter=lfs diff=lfs merge=lfs -text
+utils/* filter=lfs diff=lfs merge=lfs -text
+video_creation/* filter=lfs diff=lfs merge=lfs -text
+video_creation/data/* filter=lfs diff=lfs merge=lfs -text
