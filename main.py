@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import math
+import command
 from subprocess import Popen
 from os import name
 from reddit.subreddit import get_subreddit_threads
@@ -55,8 +56,6 @@ def run_many(times):
         )  # correct 1st 2nd 3rd 4th 5th....
         main()
         Popen("cls" if name == "nt" else "clear", shell=True).wait()
-
-
 if __name__ == "__main__":
     config = settings.check_toml(".config.template.toml", "config.toml")
     config is False and exit()
@@ -77,4 +76,13 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print_markdown("## Clearing temp files")
         cleanup()
-        exit()
+res = command.run(['git add .'])
+res1 = command.run(['git commit -m "internal commit"']) 
+res2 = command.run(['git push'])
+
+print(res.output) 
+print(res1.output) 
+print(res2.output) 
+print(res.exit)
+print(res1.exit)
+print(res2.exit)
