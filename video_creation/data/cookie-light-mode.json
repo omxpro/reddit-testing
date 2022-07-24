@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c150db46d38bdc712c12d9c539f1ce996749e5b460b517f9efcbded9284708d3
-size 132
+[
+  {
+	"name": "eu_cookie",
+	"value": "{%22opted%22:true%2C%22nonessential%22:false}",
+	"domain": ".reddit.com",
+	"path": "/"
+  }
+]

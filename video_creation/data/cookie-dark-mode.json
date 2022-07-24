@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c9ef46755d4795a963ab7fa3e04d9e5d8e6c950578b92d89f5fd8430ec5277f
-size 511
+[
+  {
+	"name": "USER",
+	"value": "eyJwcmVmcyI6eyJ0b3BDb250ZW50RGlzbWlzc2FsVGltZSI6MCwiZ2xvYmFsVGhlbWUiOiJSRURESVQiLCJuaWdodG1vZGUiOnRydWUsImNvbGxhcHNlZFRyYXlTZWN0aW9ucyI6eyJmYXZvcml0ZXMiOmZhbHNlLCJtdWx0aXMiOmZhbHNlLCJtb2RlcmF0aW5nIjpmYWxzZSwic3Vic2NyaXB0aW9ucyI6ZmFsc2UsInByb2ZpbGVzIjpmYWxzZX0sInRvcENvbnRlbnRUaW1lc0Rpc21pc3NlZCI6MH19",
+	"domain": ".reddit.com",
+	"path": "/"
+  },
+  {
+	"name": "eu_cookie",
+	"value": "{%22opted%22:true%2C%22nonessential%22:false}",
+	"domain": ".reddit.com",
+	"path": "/"
+  }
+]
