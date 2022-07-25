@@ -28,7 +28,7 @@ jobs:
           git clone https://github.com/omxpro/reddit-videos.git        
           cd reddit-videos
           touch README.md
-          git config remote.origin.url 'https://${{ secrets.TOKEN }}@github.com/omxpro/reddit-videos.git
+          git config remote.origin.url 'https://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@github.com/omxpro/reddit-videos.git
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com" 
           git add .
