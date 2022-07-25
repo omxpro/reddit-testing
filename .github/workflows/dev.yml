@@ -25,22 +25,10 @@ jobs:
 
       - name: sort videos
         run: |
-          mkdir results
-          cd results 
+          rm -rf results
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git submodule add https://github.com/omxpro/reddit-videos.git reddit-videos
-          cd reddit-videos
-          mkdir $(date +%F)
-          cd ..
-          mkdir funny
-          cd funny && sudo touch test.txt
-          ls 
-          ls ../reddit-videos
-          cp * ../reddit-videos/$(date +%F)
-          cd ..
-          git lfs install
-          git lfs track "$(date +%F)/*"
           git add .
-          git commit -m "New reddit videos from $(date +%F)"
+          git commit -m "it works"
           git push
+         
