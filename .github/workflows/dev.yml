@@ -35,8 +35,8 @@ jobs:
           cd ../
           mkdir funny
           cd funny
-          mv * ../reddit-vidoes/$(date +%F)
-          cd ../reddit-videos
+          mv . ../reddit-vidoes/$(date +%F)
+          cd ../
           git lfs install
           git lfs track "$(date +%F)/*"
           git add .
