@@ -33,6 +33,7 @@ jobs:
           git config --global user.name "omxpro"
           git config --global user.password "${{ secrets.TOKEN }}"
           git remote -v
+          git remote add origin https://github.com/omxpro/reddit-vidoes.git
           git add .
           git commit -m "New reddit videos from $(date +%F)"
           git push
