@@ -1,7 +1,7 @@
 
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Main
 
 # Controls when the workflow will run
 on:
@@ -36,7 +36,7 @@ jobs:
           python3 -m playwright install
           python3 -m playwright install-deps
 
-      - name: git stuff
+      - name: git config
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -56,15 +56,18 @@ jobs:
           cd results 
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git submodule add https://github.com/omxpro/reddit-videos.git
+          git submodule add https://github.com/omxpro/reddit-videos.git reddit-videos 
           cd reddit-videos
           mkdir $(date +%F)
-          cd ../
+          cd ..
           cd funny
-          mv * ../reddit-vidoes/$(date +%F)
-          cd ../reddit-videos
+          cp * ../reddit-videos/$(date +%F)
+          cd ../reddit-videos 
           git lfs install
           git lfs track "$(date +%F)/*"
+          cd ..
+          cd results/funny
+          rm -rf *
           git add .
           git commit -m "New reddit videos from $(date +%F)"
           git push
@@ -75,7 +78,7 @@ jobs:
         run: |
           git add .
           git config http.postBuffer 524288000
-          git commit -m "New Videos"
+          git commit -m "New Videos from $(date +%F)"
           git config --global http.version HTTP/1.1 
           git push 
           git config --global http.version HTTP/2
