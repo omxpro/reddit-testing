@@ -25,7 +25,7 @@ jobs:
 
       - name: sort videos
         run: |
-          git submodule add https://github.com/omxpro/reddit-videos.git reddit-videos          
+          git clone https://github.com/omxpro/reddit-videos.git        
           cd reddit-videos
           touch README.md
           git config --global user.name "github-actions"
