@@ -1,0 +1,44 @@
+name: Development 
+
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "Dev" ]
+  pull_request:
+    branches: [ "Dev" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: sort videos
+        run: |
+          cd results 
+          git config --global user.name "github-actions"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git submodule add https://github.com/omxpro/reddit-videos.git
+          cd reddit-videos
+          mkdir $(date +%F)
+          cd ../
+          cd funny
+          mv * ../reddit-vidoes/$(date +%F)
+          cd ../reddit-videos
+          git lfs install
+          git lfs track "$(date +%F)/*"
+          git add .
+          git commit -m "New reddit videos from $(date +%F)"
+          git push
+          cd ../
+          cd ../
