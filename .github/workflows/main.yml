@@ -69,7 +69,9 @@ jobs:
           cd funny
           rm -rf *
           cd ..
-          cd reddit-videos 
+          cd reddit-videos
+          git config --global user.name "github-actions"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com" 
           git add .
           git commit -m "New reddit videos from $(date +%F)"
           git push
