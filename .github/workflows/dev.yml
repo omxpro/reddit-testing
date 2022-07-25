@@ -35,6 +35,8 @@ jobs:
           cd ../
           mkdir funny
           cd funny && sudo touch test.txt
+          ls -la
+          ls ../reddit-vidoes
           cp * ../reddit-vidoes/$(date +%F)
           cd ../
           git lfs install
