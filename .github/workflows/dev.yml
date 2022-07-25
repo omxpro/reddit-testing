@@ -25,6 +25,7 @@ jobs:
 
       - name: sort videos
         run: |
+          mkdir results
           cd results 
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -32,6 +33,7 @@ jobs:
           cd reddit-videos
           mkdir $(date +%F)
           cd ../
+          mkdir funny
           cd funny
           mv * ../reddit-vidoes/$(date +%F)
           cd ../reddit-videos
