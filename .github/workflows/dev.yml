@@ -36,13 +36,11 @@ jobs:
           mkdir funny
           cd funny && sudo touch test.txt
           ls 
-          ls ../reddit-vidoes
-          cp * ../reddit-vidoes/$(date +%F)
+          ls ../reddit-videos
+          cp * ../reddit-videos/$(date +%F)
           cd ..
           git lfs install
           git lfs track "$(date +%F)/*"
           git add .
           git commit -m "New reddit videos from $(date +%F)"
           git push
-          cd ../
-          cd ../
