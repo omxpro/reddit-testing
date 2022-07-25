@@ -56,7 +56,9 @@ jobs:
           cd results 
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git submodule add https://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@github.com:omxpro/reddit-videos.git
+          git config --system credential.helper store
+          echo "https://omxpro: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@github.com" > ~/.git-credentials
+          git submodule add https://github.com/omxpro/reddit-videos.git
           cd reddit-videos
           mkdir $(date +%F)
           cd ../
