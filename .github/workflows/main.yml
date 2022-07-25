@@ -66,7 +66,7 @@ jobs:
           git lfs install
           git lfs track "$(date +%F)/*"
           cd ..
-          cd results/funny
+          cd funny
           rm -rf *
           cd ..
           cd reddit-videos 
