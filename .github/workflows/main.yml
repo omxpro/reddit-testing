@@ -68,11 +68,13 @@ jobs:
           cd ..
           cd results/funny
           rm -rf *
+          cd ..
+          cd reddit-videos 
           git add .
           git commit -m "New reddit videos from $(date +%F)"
           git push
-          cd ../
-          cd ../
+          cd ..
+          cd ..
 
       - name: push changes 
         run: |
