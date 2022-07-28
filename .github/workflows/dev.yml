@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: sort videos
-        run: rm -rf reddit-vidoes
+        run:  rm -rf reddit-vidoes
 
  - uses: stefanzweifel/git-auto-commit-action@v4
         with:
