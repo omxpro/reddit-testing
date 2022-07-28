@@ -34,7 +34,7 @@ jobs:
           git config --global user.password "${{ secrets.TOKEN }}"
           git remote -v
           git add .
-          git commit -m "New reddit videos from $(date +%F)"
+          git commit -m " 👍 New reddit videos from $(date +%F)"
           git push
           cd ..
           cd ..
