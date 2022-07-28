@@ -51,40 +51,6 @@ jobs:
           git lfs track "TTS/*" "results/*" "results/funny/*"
           git lfs track
 
-      - name: sort videos
-        run: |
-          cd results 
-          git config --global user.name "github-actions"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git submodule add https://github.com/omxpro/reddit-videos.git reddit-videos 
-          cd reddit-videos
-          mkdir $(date +%F)
-          cd ..
-          cd funny
-          cp * ../reddit-videos/$(date +%F)
-          cd ../reddit-videos 
-          git lfs install
-          git lfs track "$(date +%F)/*"
-          cd ..
-          cd funny
-          rm -rf *
-          cd ..
-          cd reddit-videos
-          git config --global user.name "github-actions"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com" 
-          git config --global user.name "omxpro"
-          git config --global user.password "${{ secrets.TOKEN }}"
-          git add .
-          git commit -m "New reddit videos from $(date +%F)"
-          git push
-          cd ..
-          cd ..
-
-      - name: push changes 
-        run: |
-          git add .
-          git config http.postBuffer 524288000
-          git commit -m "New Videos from $(date +%F)"
-          git config --global http.version HTTP/1.1 
-          git push 
-          git config --global http.version HTTP/2
+- uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 👍 New reddit videos from $(date +%F)
