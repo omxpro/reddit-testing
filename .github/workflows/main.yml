@@ -46,7 +46,7 @@ jobs:
           key: "settings.allow_nsfw"
           value: "false"
           key: "settings.theme"
-          value: "${{ secrets.THEME }}"
+          value: "${{ secrets.USER_THEME }}"
           key: "settings.times_to_run"
           value: "${{ secrets.RUN }}"
           key: "settings.storymode"
