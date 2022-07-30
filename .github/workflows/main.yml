@@ -50,10 +50,8 @@ jobs:
           value: "${{ secrets.RUN }}",
           key: "settings.storymode"
           value: "true",
-        # background 
           key: "settings.background.background_choice"
           value: "${{ secrets.BACKGROUND }}",
-        # tss
           key: "settings.tts.choise"
           value: "${{ secrets.CHOISE }}",
           key: "settings.tts.aws_polly_voice"
@@ -62,7 +60,6 @@ jobs:
           value: "${{ secrets.STREAMLABS }}",
           key: "settings.tts.tiktok_voice"
           value: "$${{ secrets.TIKTOK_VOICE }}",
-        # credentials
           key: "reddit.creds.client_id"
           value: "${{ secrets.CLIENT_ID }}",
           key: "reddit.creds.client_secret"
@@ -73,7 +70,6 @@ jobs:
           value: "${{ secrets.PASSWORD }}",
           key: "reddit.creds.2fa"
           value: "${{ secrets.2FA }}",
-        # thread settings
           key: "reddit.thread.random"
           value: "true",
           key: "reddit.thread.subreddit"
