@@ -44,60 +44,47 @@ jobs:
           file: "config.toml"
         # settings 
           key: "settings.allow_nsfw"
-          value: "false"
+          value: "false",
           key: "settings.theme"
-          value: "${{ secrets.USER_THEME }}"
+          value: "${{ secrets.USER_THEME }}",
           key: "settings.times_to_run"
-          value: "${{ secrets.RUN }}"
+          value: "${{ secrets.RUN }}",
           key: "settings.storymode"
-          value: "true"
+          value: "true",
         # background 
           key: "settings.background.background_choice"
-          value: "${{ secrets.BACKGROUND }}"
+          value: "${{ secrets.BACKGROUND }}",
         # tss
           key: "settings.tts.choise"
-          value: "${{ secrets.CHOISE }}"
+          value: "${{ secrets.CHOISE }}",
           key: "settings.tts.aws_polly_voice"
-          value: "${{ secrets.AWS }}"
+          value: "${{ secrets.AWS }}",
           key: "settings.tts.streamlabs_polly_voice"
-          value: "${{ secrets.STREAMLABS }}"
+          value: "${{ secrets.STREAMLABS }}",
           key: "settings.tts.tiktok_voice"
-          value: "$${{ secrets.TIKTOK_VOICE }}"
+          value: "$${{ secrets.TIKTOK_VOICE }}",
         # credentials
           key: "reddit.creds.client_id"
-          value: "${{ secrets.CLIENT_ID }}"
+          value: "${{ secrets.CLIENT_ID }}",
           key: "reddit.creds.client_secret"
-          value: "${{ secrets.CLIENT_SECRET }}"
+          value: "${{ secrets.CLIENT_SECRET }}",
           key: "reddit.creds.username"
-          value: "${{ secrets.USERNAME }}"
+          value: "${{ secrets.USERNAME }}",
           key: "reddit.creds.password"
-          value: "${{ secrets.PASSWORD }}"
+          value: "${{ secrets.PASSWORD }}",
           key: "reddit.creds.2fa"
-          value: "${{ secrets.2FA }}"
+          value: "${{ secrets.2FA }}",
         # thread settings
           key: "reddit.thread.random"
-          value: "true"
+          value: "true",
           key: "reddit.thread.subreddit"
-          value: "${{ secrets.REDDIT }}"
+          value: "${{ secrets.REDDIT }}",
           key: "reddit.thread.max_comment_length"
-          value: "${{ secrets.MAX }}"
+          value: "${{ secrets.MAX }}",
           key: "reddit.thread.post_lang"
-          value: "${{ secrets.LANG }}"
+          value: "${{ secrets.LANG }}",
           key: "reddit.thread.min_comments"
-          value: "${{ secrets.MIN_COMMENTS }}"
-
-
-
-
-
-
-
-
-
-
-
-
-
+          value: "${{ secrets.MIN_COMMENTS }",
       - name: run the program 
         run: python3 main.py
       - uses: stefanzweifel/git-auto-commit-action@v4
