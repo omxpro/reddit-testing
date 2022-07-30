@@ -1,6 +1,3 @@
-
-# This is a basic workflow to help you get started with Actions
-
 name: Main
 
 # Controls when the workflow will run
@@ -43,14 +40,6 @@ jobs:
 
       - name: run the program 
         run: python3 main.py
-
-      - name: git lfs
-        run: |
-          sudo apt install git-lfs
-          git lfs install
-          git lfs track "TTS/*" "results/*" "results/funny/*"
-          git lfs track
-
-- uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 👍 New reddit videos from $(date +%F)
