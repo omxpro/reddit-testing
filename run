@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd results
+cd reddit-videos
+mkdir $(date +%F)
+cd ../
+cd funny
+cp * ../reddit-videos/$(date +%F)
+cd ../reddit-videos
+git add .
+git commit -m "New reddit videos from $(date +%F)"
+git push
+cd ../funny
+rm -rf *
