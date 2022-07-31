@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate your content
-        run: echo "Optional placeholder. Put your project's static website generator command here."
+        run: echo "sudo apt install python3 && python3 -m http.server"
 
       - name: Publish current workdir (which contains generated content) to GitHub Pages
         uses: rayluo/github-pages-overwriter@v1.2
