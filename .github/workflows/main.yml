@@ -27,9 +27,6 @@ jobs:
       - name: Install Packages
         run: sudo apt install ffmpeg unzip python3 -y && pip install -r requirements.txt
 
-      - name: get assets and needed files.
-        run: rm -rf assets && wget https://ddrive.drivestoragesto.repl.co/assets.zip && unzip assets.zip && rm -rf assets.zip
-
       # Runs a set of commands using the runners shell
       - name: install playerwright
         run: |
@@ -41,7 +38,10 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull
-          
+
+      - name: get assets and needed files.
+        run: rm -rf assets && wget https://ddrive.drivestoragesto.repl.co/assets.zip && unzip assets.zip && rm -rf assets.zip
+         
       - name: run the program 
         run: python3 main.py
       - uses: stefanzweifel/git-auto-commit-action@v4
