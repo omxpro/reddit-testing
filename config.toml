@@ -1,12 +1,12 @@
 [settings]
 allow_nsfw = false
 theme = "dark"
-times_to_run = 1
+times_to_run = 2
 opacity = 0.9
 storymode = true
 
 [settings.background]
-background_choice = "minecraft"
+background_choice = "gta"
 
 [settings.tts]
 choice = "streamlabspolly"
