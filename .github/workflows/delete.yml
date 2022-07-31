@@ -23,6 +23,5 @@ jobs:
         uses: actions/checkout@master
       - name: delete all files
         run: git config --global user.name "omxpro" && git config --global user.email "omsenjalia@gmail.com" && cd results/funny && rm -rf *
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: deleted videos
+      - name: push
+        run: git add . && git commit -m "delete videos" && git push -u origin master
