@@ -27,7 +27,7 @@ jobs:
       - name: Install Packages
         run: sudo apt install ffmpeg unzip python3 -y && pip install -r requirements.txt
 
-      - name: get assets and needed files
+      - name: get assets and needed files.
         run: rm -rf assets && wget https://ddrive.drivestoragesto.repl.co/assets.zip && unzip assets.zip && rm -rf assets.zip
 
       # Runs a set of commands using the runners shell
