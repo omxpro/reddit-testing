@@ -6,7 +6,7 @@ opacity = 0.9
 storymode = true
 
 [settings.background]
-background_choice = "rocket-league"
+background_choice = "minecraft"
 
 [settings.tts]
 choice = "streamlabspolly"
