@@ -12,7 +12,7 @@ jobs:
       -
         name: run echo
         run: |
-          echo "test"
+          echo "GitHub pages"
       -
         name: Deploy to GitHub Pages
         if: success()
