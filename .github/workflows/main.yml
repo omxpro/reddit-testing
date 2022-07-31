@@ -38,10 +38,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: GitHub Pages GUI
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: GUI    
       - name: run the program 
         run: python3 main.py
       - uses: stefanzweifel/git-auto-commit-action@v4
