@@ -17,6 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: delete all files
-        run: git config --global user.name "omxpro" && git config --global user.email "omsenjalia@gmail.com" && cd results/funny && rm -rf *
+        run: git config --global user.name "omxpro" && git config --global user.email "omsenjalia@gmail.com" && cd results/ && rm -rf *
       - name: push
         run: git add . && git commit -m "delete videos" && git push -u origin master
