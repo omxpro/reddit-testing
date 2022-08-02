@@ -23,7 +23,7 @@ password = "1166omse"
 
 [reddit.thread]
 random = true
-subreddit = "aww"
+subreddit = "askreddit"
 post_id = ""
 max_comment_length = 250
 post_lang = "en"
