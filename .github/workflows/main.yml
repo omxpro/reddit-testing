@@ -44,6 +44,8 @@ jobs:
          
       - name: run the program 
         run: python3 main.py
+      - name: pull latest files
+        run: git pull -f
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 👍 New reddit videos from $(date +%F)
