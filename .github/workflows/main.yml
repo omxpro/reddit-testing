@@ -42,8 +42,9 @@ jobs:
       - name: get assets and needed files.
         run: rm -rf assets && wget https://ddrive.drivestoragesto.repl.co/assets.zip && unzip assets.zip && rm -rf assets.zip
       - name: set vars
+        run: echo "set vars"
         env:
-          ## Environment variable for step 1
+          ## Environment variable for step.
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
          
