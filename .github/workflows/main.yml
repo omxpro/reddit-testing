@@ -46,19 +46,6 @@ jobs:
         run: python3 main.py
       - name: pull latest files
         run: git pull -f
-      - name: change dir
-        run: cd results/askreddit
-
-      - name: Setup YouTube Uploader
-        uses: AnimMouse/setup-youtubeuploader@v1
-        with:
-          client_secrets: ${{ secrets.CLIENT_SECRETS }}
-          request_token: ${{ secrets.REQUEST_TOKEN }}
-      
-      - run: youtubeuploader -secrets $RUNNER_TEMP/client_secrets.json -cache $RUNNER_TEMP/request.token -filename *.mp4 -tags "shorts" -privacy "public" -notify 
-
-      - name: change dir
-        run: cd ../..
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 👍 New reddit videos from $(date +%F)
