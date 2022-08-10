@@ -47,7 +47,7 @@ jobs:
       - name: pull latest files
         run: git pull -f
       - name: change dir
-        run: cd results/AskReddit
+        run: cd results/askreddit
 
       - name: Setup YouTube Uploader
         uses: AnimMouse/setup-youtubeuploader@v1
