@@ -22,8 +22,8 @@ password = "1166@omse"
 2fa = false
 
 [reddit.thread]
-random = true
-subreddit = "funny+askreddit+gaming+aww+worldnews+todayilearned+movies"
+random = false
+subreddit = "funny"
 post_id = ""
 max_comment_length = 250
 post_lang = "en"
