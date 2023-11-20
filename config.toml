@@ -15,16 +15,15 @@ streamlabs_polly_voice = "Matthew"
 tiktok_voice = "en_us_006"
 
 [reddit.creds]
-client_id = "$CLIENT_ID"
-client_secret = "$CLIENT_SECRET"
-username = "Comfortable-Kiwi6563"
-password = "1166omse"
+client_id = "l393ei5GBzhb8czhWQqChA"
+client_secret = "yRY5FcwgOMW7-N4_cmBuvLil1Xd_-Q"
+username = "InevitableResident24"
+password = "1166@omse"
 2fa = false
 
 [reddit.thread]
 random = true
-subreddit = "askreddit"
+subreddit = "funny+askreddit+gaming+aww+worldnews+todayilearned+movies"
 post_id = ""
 max_comment_length = 250
 post_lang = "en"
-min_comments = 17
