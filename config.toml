@@ -26,4 +26,5 @@ random = false
 subreddit = "funny"
 post_id = ""
 max_comment_length = 250
+min_comments= 20
 post_lang = "en"
