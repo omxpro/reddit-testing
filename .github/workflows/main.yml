@@ -42,7 +42,8 @@ jobs:
       - name: get assets and needed files.
         run: |
          rm -rf assets
-         wget https://cdn.discordapp.com/attachments/863414605342703636/1176079298017374258/assets.zip?ex=656d9033&is=655b1b33&hm=dab5ce535c27d627d2576f6ce0431752c4c244ca1d77f52de3079805debbd0df&
+         wget -O assets.zip https://cdn.discordapp.com/attachments/863414605342703636/1176079298017374258/assets.zip?ex=656d9033&is=655b1b33&hm=dab5ce535c27d627d2576f6ce0431752c4c244ca1d77f52de3079805debbd0df&
+         unzip assets.zip
          rm -rf assets.zip
       - name: set vars
         run: echo "set vars"
